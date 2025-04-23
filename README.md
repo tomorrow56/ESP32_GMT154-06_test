@@ -59,6 +59,8 @@ LovyanGFXとM5Stack-Avatarライブラリを使用して、GMT154-06 LCDパネ�
 
 ### ESP32_GMT154-06_test
 
+- `examples/ESP32_NTP_AnalogClock/` にNTPアナログ時計サンプルを追加しました。
+
 基本的なTFT_eSPIを使用したサンプルです。起動後、LCDパネルに「Hello World」と接続情報が表示されます。
 
 ### ESP32_GMT154-06_LovyanGFX_test
