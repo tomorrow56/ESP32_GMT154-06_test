@@ -61,6 +61,27 @@ LovyanGFXとM5Stack-Avatarライブラリを使用して、GMT154-06 LCDパネ�
 
 - `examples/ESP32_NTP_AnalogClock/` にNTPアナログ時計サンプルを追加しました。
 
+---
+
+## ESP32_NTP_AnalogClock（NTPアナログ時計 with Web設定 & OTA）
+
+ESP32とLovyanGFXライブラリを使い、NTPサーバーから取得した時刻をアナログ時計としてLCDに表示するサンプルです。
+
+**主な特徴：**
+- Web UIからWiFi設定可能
+- OTA（無線アップデート）対応
+- タッチセンサーで設定モード切替
+- 1時間ごとに自動NTP再同期
+- ST7789搭載240x240 LCD向け
+
+**セットアップ概要：**
+1. PlatformIOで書き込み
+2. 初回起動時またはタッチしながら起動で設定モード（AP）
+3. スマホ等で `ESP32-Clock-Setup` WiFiに接続し、Web UIからWiFi設定
+4. 通常時はNTP同期しアナログ時計表示
+
+詳細は [`examples/ESP32_NTP_AnalogClock/README.md`](examples/ESP32_NTP_AnalogClock/README.md) を参照してください。
+
 基本的なTFT_eSPIを使用したサンプルです。起動後、LCDパネルに「Hello World」と接続情報が表示されます。
 
 ### ESP32_GMT154-06_LovyanGFX_test
