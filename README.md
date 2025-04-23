@@ -48,6 +48,12 @@ LovyanGFXライブラリを使用したGMT154-06 LCDパネルのテストプロ�
 
 LovyanGFXとM5Stack-Avatarライブラリを使用して、GMT154-06 LCDパネルにアバターを表示するプロジェクトです。IO32ピンのタッチセンサーを使用して、アバターの表情を変更できます。
 
+### 4. ESP32_NTP_AnalogClock
+
+`examples/ESP32_NTP_AnalogClock` ディレクトリにあります。
+
+ESP32＋LovyanGFXでNTP時刻をアナログ時計表示。Web UIからWiFi設定、OTAアップデート、タッチセンサーで設定モード切替が可能なサンプルです。
+
 ## ビルド方法
 
 1. PlatformIOをインストールします
@@ -59,11 +65,9 @@ LovyanGFXとM5Stack-Avatarライブラリを使用して、GMT154-06 LCDパネ�
 
 ### ESP32_GMT154-06_test
 
-- `examples/ESP32_NTP_AnalogClock/` にNTPアナログ時計サンプルを追加しました。
+基本的なTFT_eSPIを使用したサンプルです。起動後、LCDパネルに「Hello World」と接続情報が表示されます。
 
----
-
-## ESP32_NTP_AnalogClock（NTPアナログ時計 with Web設定 & OTA）
+### ESP32_NTP_AnalogClock（NTPアナログ時計 with Web設定 & OTA）
 
 ESP32とLovyanGFXライブラリを使い、NTPサーバーから取得した時刻をアナログ時計としてLCDに表示するサンプルです。
 
@@ -81,8 +85,6 @@ ESP32とLovyanGFXライブラリを使い、NTPサーバーから取得した時
 4. 通常時はNTP同期しアナログ時計表示
 
 詳細は [`examples/ESP32_NTP_AnalogClock/README.md`](examples/ESP32_NTP_AnalogClock/README.md) を参照してください。
-
-基本的なTFT_eSPIを使用したサンプルです。起動後、LCDパネルに「Hello World」と接続情報が表示されます。
 
 ### ESP32_GMT154-06_LovyanGFX_test
 
