@@ -54,6 +54,12 @@ LovyanGFXとM5Stack-Avatarライブラリを使用して、GMT154-06 LCDパネ�
 
 ESP32＋LovyanGFXでNTP時刻をアナログ時計表示。Web UIからWiFi設定、OTAアップデート、タッチセンサーで設定モード切替が可能なサンプルです。
 
+### 5. ESP32_NTP_AnalogClock_classic
+
+`examples/ESP32_NTP_AnalogClock_classic` ディレクトリにあります。
+
+ESP32とLovyanGFXライブラリを使用したクラシックデザインのNTPアナログ時計です。伝統的な時計デザインを採用し、高精度な针の動きと美しい表示を実現しています。非同期Web機能も備えています。
+
 ## ビルド方法
 
 1. PlatformIOをインストールします
