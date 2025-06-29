@@ -6,7 +6,7 @@
 
 - ESP32開発ボード
 - GMT154-06 LCDパネル
-- 接続ワイヤー
+- デバッグボード(UART-USB変換)
 
 ## 接続方法
 
@@ -19,6 +19,22 @@ LCDパネルとESP32の接続は以下の通りです：
 | DATA    | IO23      |
 | CLK     | IO18      |
 | バックライト | IO25      |
+
+![](img/lcdconnector.png)
+
+デバッグボードとESP32の接続は以下の通りです
+
+| デバッグポート | ESP32 |
+|---------|-----------|
+| Touch   | IO32      |
+| GND     | GND       |
+| TXD0    | IO1       |
+| RXD0    | IO3       |
+| +3.3V   | 3V3       |
+| IO0     | IO0       |
+| EN      | EN        |
+
+![](img/testport.png)
 
 ## ソフトウェア要件
 
@@ -59,6 +75,12 @@ ESP32＋LovyanGFXでNTP時刻をアナログ時計表示。Web UIからWiFi設�
 `examples/ESP32_NTP_AnalogClock_classic` ディレクトリにあります。
 
 ESP32とLovyanGFXライブラリを使用したクラシックデザインのNTPアナログ時計です。伝統的な時計デザインを採用し、高精度な针の動きと美しい表示を実現しています。非同期Web機能も備えています。
+
+### 6. ESP32_NTP_AnalogClock_SmartWatch
+
+`examples/ESP32_NTP_AnalogClock_SmartWatch` ディレクトリにあります。
+
+ESP32とLovyanGFXライブラリを使用したスマートウォッチ風デザインのNTPアナログ時計です。黒背景に白いマーカーと針を使用したミニマルなデザインを採用し、モダンな印象を与えます。非同期Web機能も備えています。
 
 ## ビルド方法
 
