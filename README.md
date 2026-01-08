@@ -1,11 +1,11 @@
-# ESP32 GMT154-06 LCD プロジェクト集
+# ESP32+GMT154-06 GeekMagic SmallTV Pro カスタムプロジェクト
 
-このリポジトリは、ESP32マイコンとGMT154-06 LCDパネルを使用した様々なプロジェクトを収録しています。初心者から上級者まで、様々なレベルのサンプルコードを提供しています。
+このリポジトリは、ESP32マイコンとGMT154-06 LCDパネルを使用した **"GeekMagic SmallTV Pro"** を使用したカスタムプロジェクトです。
+動作確認から簡単なアプリケーションまでのサンプルコードを掲載しています。
 
 ## ハードウェア要件
 
-- ESP32開発ボード
-- GMT154-06 LCDパネル
+- [GeekMagic SmallTV Pro(ESP32+GMT154-06)](https://ja.aliexpress.com/item/1005005699410709.html)
 - デバッグボード(UART-USB変換)
 
 ## 接続方法
